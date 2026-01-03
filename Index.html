@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Heading -->
+  <div class="heading">
+    <h1>Currency Converter</h1>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Current Rate -->
+    <h2 id="currentRate">1 USD = 89.93 INR</h2>
+
+    <!-- Amount Input -->
+    <div class="amount-box">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount"/>
+    </div>
+
+    <!-- Currency Exchange -->
+    <div class="exchange-div">
+
+      <!-- From -->
+      <div class="code-flag">
+        <div class="flagbox">
+          <img id="from-flag" class="flag" />
+        </div>
+        <select id="from-currency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="PKR">PKR</option>
+          <option value="CAD">CAD</option>
+          <option value="KWD">KWD</option>
+          <option value="JPY">JPY</option>
+          <option value="AUD">AUD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="HKD">HKD</option>
+          <option value="IQD">IQD</option>
+          <option value="JOD">JOD</option>
+          <option value="AED">AED</option>
+          <option value="MAD">MAD</option>
+          <option value="MXN">MXN</option>
+          <option value="PHP">PHP</option>
+          <option value="COP">COP</option>
+          <option value="DKK">DKK</option>
+          <option value="RWF">RWF</option>
+          <option value="NOK">NOK</option>
+          <option value="IDR">IDR</option>
+          <option value="IRR">IRR</option>
+        </select>
+      </div>
+
+      <!-- Arrow -->
+      <img src="arrow.png" id="arrow" />
+
+      <!-- To -->
+      <div class="code-flag">
+        <div class="flagbox">
+          <img id="to-flag" class="flag" />
+        </div>
+        <select id="to-currency">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="PKR">PKR</option>
+          <option value="CAD">CAD</option>
+          <option value="KWD">KWD</option>
+          <option value="AUD">AUD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="HKD">HKD</option>
+          <option value="IQD">IQD</option>
+          <option value="JOD">JOD</option>
+          <option value="AED">AED</option>
+          <option value="MAD">MAD</option>
+          <option value="MXN">MXN</option>
+          <option value="PHP">PHP</option>
+          <option value="COP">COP</option>
+          <option value="DKK">DKK</option>
+          <option value="RWF">RWF</option>
+          <option value="NOK">NOK</option>
+          <option value="IDR">IDR</option>
+          <option value="IRR">IRR</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Result -->
+    <div id="result"></div>
+
+    <!-- Button -->
+    <button id="calculate">Calculate</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
