@@ -8,6 +8,7 @@ const toFlag = document.getElementById("to-flag");
 const arrow = document.getElementById("arrow");
 const result = document.getElementById("result");
 const calculateBtn = document.getElementById("calculate");
+const sound = document.getElementById("sound");
 
 // ================= MAP =================
 const currencyToCountry = {
@@ -95,6 +96,10 @@ async function convertCurrency() {
 calculateBtn.addEventListener("click", (e) => {
   e.preventDefault();
   convertCurrency();
+  
+  //==== CLICK SOUND ====
+  sound.currentTime = 0;
+  sound.play();
 });
 
 // ================= INIT =================
